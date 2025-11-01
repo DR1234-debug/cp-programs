@@ -1,0 +1,30 @@
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int s,a,b,c;
+    float r;
+    scanf("%d%d%d",&a,&b,&c);
+    if(1<=a && b>=1 && c>=1 && a<=50 && b<=50 && c<=50)
+    {  
+        if(a+b>c && b+c>a && c+a>b)
+        {
+            s=(a+b+c)/2;
+            r=sqrt(s*(s-a)*(s-b)*(s-c));
+            printf("%.4f",r);
+        }
+        else
+        {
+            printf("Invalid input");
+        }
+       
+    }
+    else
+    {
+        printf("Invalid input");
+    }
+    return 0;
+
+}
+        
